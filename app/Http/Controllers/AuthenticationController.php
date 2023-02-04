@@ -35,7 +35,7 @@ class AuthenticationController extends Controller
     
     public function logout(Request  $request)
     {
-        return $request->user()->currantAccessToken()->delete();
+        return $request->user()->currentAccessToken()->delete();
     }
     
     public function register(Request $request)
